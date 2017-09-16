@@ -3,4 +3,7 @@ node_modules
 *.log
 npm-debug.log*
 
+# database files, stay untracked
+db
+
 
