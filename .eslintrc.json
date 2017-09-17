@@ -5,5 +5,10 @@
     },
     "env": {
       "node": true
+    },
+    "rules": {
+      "max-len": {
+        "code": 100
+      } 
     }
 }
