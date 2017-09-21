@@ -6,4 +6,7 @@ npm-debug.log*
 # database files, stay untracked
 db
 
+# cloud9 env
+.c9
+
 
