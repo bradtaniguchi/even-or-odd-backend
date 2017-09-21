@@ -1,7 +1,7 @@
 const socketio = require('socket.io');
 
 module.exports.listen = (app) => {
-  io = socketio.listen(app);
+  const io = socketio.listen(app); // generate the socket listener
   
   io.sockets.on('connection', (socket) => {
     console.log('sockets:connection');
@@ -20,7 +20,7 @@ module.exports.listen = (app) => {
       socket.broadcast.emit('unbet', from, msg); // send information to other players
     });
 
-    socket.on('disconnect', (first, secon) => {
+    socket.on('disconnect', (first, second) => {
       console.log('test in disconnect');
       console.log(first);
       console.log(second);
