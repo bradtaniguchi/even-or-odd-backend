@@ -4,6 +4,9 @@ const router = require('express').Router();
 const users = require('./users'); 
 const games = require('./games');
 const status = require('./status');
-router.use('/users', users);
 
+// available routes at /api/*
+router.use('/users', users);
+router.use('/games', games);
+router.use('/status', status);
 module.exports = router;
